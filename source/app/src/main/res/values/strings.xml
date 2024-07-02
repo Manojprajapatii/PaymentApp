@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Payment App</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="rewards">Banking that\nrewards!</string>
+    <string name="btn">Get Started</string>
+    <string name="name">Hello Rohan!</string>
+    <string name="welcome"> Welcome back</string>
+    <string name="code_number"> **** 4157</string>
+    <string name="balance">YOUR BALANCE</string>
+    <string name="available_balance">₹2,45,500</string>
+    <string name="sacn_qr">Scan QR</string>
+    <string name="pay_contects">Pay\ncontects</string>
+    <string name="pay_phone_number">Pay phone\nnumber</string>
+    <string name="pay_upi_id_or_number">Pay UPI ID or number</string>
+    <string name="self_transfer">Self\ntransfer</string>
+    <string name="bank_transfer">Bank\ntransfer</string>
+    <string name="my_rewards">My\nRewards</string>
+    <string name="invest">Invest</string>
+    <string name="spend_analysis">Spend\nAnalysis</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="swiggy">Swiggy</string>
+    <string name="swiggy_money">₹190</string>
+    <string name="date">June 21,2024 at 05:30PM</string>
+    <string name="transferred">TRANSFERRED</string>
+    <string name="spend_analysis2">Spend Analysis</string>
+    <string name="expenses">EXPENSES</string>
+    <string name="money">₹55,500</string>
+    <string name="shopping">SHOPPING</string>
+<!--    <string name="money17600">₹17600</string>-->
+    <string name="utility">UTILITY</string>
+<!--    <string name="money₹8250">₹8250</string>-->
+    <string name="groceries">GROCERIES</string>
+<!--    <string name="money₹13750">₹13750</string>-->
+    <string name="transportation">TRANSPORTATION</string>
+<!--    <string name="money₹9900">₹9900</string>-->
+    <string name="others">OTHERS</string>
+<!--    <string name="money₹1650">₹1650</string>-->
+
+
+
+
+
+</resources>

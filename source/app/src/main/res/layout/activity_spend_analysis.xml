@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_marginBottom="@dimen/m20"
+    tools:context=".activity.SpendAnalysis">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/m10">
+
+        <RelativeLayout
+            android:id="@+id/main_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/m23">
+
+            <ImageView
+                android:id="@+id/back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/m10"
+                android:src="@drawable/left_back" />
+
+            <com.payment.view.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/m7"
+                android:layout_marginEnd="@dimen/m10"
+                android:text="@string/spend_analysis2"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_16"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/expenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_head"
+            android:layout_marginTop="@dimen/m50">
+
+            <com.payment.view.BoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.5"
+                android:text="@string/expenses"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_14" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expenses">
+
+            <com.payment.view.BoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/m20"
+                android:text="₹55,500"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_35"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/money"
+            android:layout_marginStart="@dimen/m20"
+            android:layout_marginTop="@dimen/m30">
+
+
+            <ImageView
+                android:layout_width="@dimen/m200"
+                android:layout_height="@dimen/m130"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/group2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/group_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/group"
+            android:layout_marginTop="@dimen/m30">
+
+            <com.payment.view.BoldTextView
+                android:id="@+id/m1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/m20"
+                android:background="@drawable/rounded_background"
+                android:padding="@dimen/m10"
+                android:text="1m"
+                android:textColor="@color/white" />
+
+            <com.payment.view.BoldTextView
+                android:id="@+id/m3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/m35"
+                android:layout_toRightOf="@+id/m1"
+                android:padding="@dimen/m10"
+                android:text="3m" />
+
+            <com.payment.view.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/m10"
+                android:text="1m" />
+
+            <com.payment.view.BoldTextView
+                android:id="@+id/y1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/m35"
+                android:layout_marginRight="37dp"
+                android:layout_toLeftOf="@+id/y2"
+                android:padding="@dimen/m10"
+                android:text="1Y" />
+
+            <com.payment.view.BoldTextView
+                android:id="@+id/y2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/m20"
+                android:padding="@dimen/m10"
+                android:text="2Y"
+
+                />
+
+
+            <View
+                android:id="@+id/line_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/m1"
+                android:layout_below="@+id/y2"
+                android:layout_marginStart="@dimen/m10"
+                android:layout_marginTop="@dimen/m8"
+                android:layout_marginEnd="@dimen/m10"
+                android:background="@color/gray2" />
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/group_item"
+            android:layout_marginStart="@dimen/m10"
+            android:layout_marginBottom="@dimen/m50"
+            android:layout_marginTop="@dimen/m10">
+
+            <RelativeLayout
+                android:id="@+id/shopping_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.payment.view.BoldTextView
+                    android:id="@+id/shopping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shopping"
+                    android:textSize="@dimen/text_16"/>
+
+                <ImageView
+                    android:id="@+id/ellipse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ellipse"
+                    android:layout_toRightOf="@+id/shopping"
+                    android:layout_marginTop="@dimen/m10"
+                    android:layout_marginStart="@dimen/m10"
+                    />
+
+                <com.payment.view.BoldTextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ellipse"
+                    android:layout_marginStart="@dimen/m20"
+                    android:text="₹17600"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold"/>
+
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_below="@+id/price"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="@dimen/m326"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="@dimen/m10"
+                    android:layout_marginEnd="@dimen/m8"
+                    android:max="100"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/shopping_bar" />
+                <com.payment.view.BoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="32%"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/progress_bar"
+                    android:layout_marginTop="@dimen/m25"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/shopping_2"
+                android:layout_width="match_parent"
+
+                android:layout_below="@+id/shopping_1"
+                android:layout_height="wrap_content">
+
+                <com.payment.view.BoldTextView
+                    android:id="@+id/utility"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/utility"
+                    android:textSize="@dimen/text_16"/>
+
+                <ImageView
+                    android:id="@+id/ellipse2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ellipse"
+                    android:layout_toRightOf="@+id/utility"
+                   android:layout_marginTop="@dimen/m10"
+                    android:layout_marginStart="@dimen/m10"
+                    />
+
+                <com.payment.view.BoldTextView
+                    android:id="@+id/price_8250"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ellipse2"
+                    android:layout_marginStart="@dimen/m20"
+                    android:text="₹8250"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold"/>
+
+
+                <ProgressBar
+                    android:id="@+id/progress_bar2"
+                    android:layout_below="@+id/price_8250"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="@dimen/m40"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="@dimen/m10"
+                    android:layout_marginEnd="@dimen/m8"
+                    android:max="100"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/utility_bar" />
+
+                <com.payment.view.BoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15%"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/progress_bar2"
+                    android:layout_marginTop="@dimen/m25"
+                    />
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/shopping_3"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/m10"
+                android:layout_below="@+id/shopping_2"
+                android:layout_height="wrap_content">
+
+                <com.payment.view.BoldTextView
+                    android:id="@+id/groceries"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/groceries"
+                    android:textSize="@dimen/text_16"/>
+
+                <ImageView
+                    android:id="@+id/ellipse3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ellipse"
+                    android:layout_toRightOf="@+id/groceries"
+                    android:layout_marginTop="@dimen/m10"
+                    android:layout_marginStart="@dimen/m10"
+                    />
+
+                <com.payment.view.BoldTextView
+                    android:id="@+id/price_13750"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ellipse3"
+                    android:layout_marginStart="@dimen/m20"
+                    android:text="₹13750"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold"/>
+
+
+                <ProgressBar
+                    android:id="@+id/progress_bar3"
+                    android:layout_below="@+id/price_13750"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="@dimen/m230"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="@dimen/m10"
+                    android:layout_marginEnd="@dimen/m8"
+                    android:max="100"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/groceries_bar" />
+
+                <com.payment.view.BoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/progress_bar3"
+                    android:text="25%"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/m25"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/shopping_4"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/m10"
+                android:layout_below="@+id/shopping_3"
+                android:layout_height="wrap_content">
+
+                <com.payment.view.BoldTextView
+                    android:id="@+id/transportation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transportation"
+                    android:textSize="@dimen/text_16"/>
+
+                <ImageView
+                    android:id="@+id/ellipse4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ellipse"
+                    android:layout_toRightOf="@+id/transportation"
+                   android:layout_marginTop="@dimen/m10"
+                    android:layout_marginStart="@dimen/m10"
+                    />
+
+                <com.payment.view.BoldTextView
+                    android:id="@+id/price_9900"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ellipse4"
+                    android:layout_marginStart="@dimen/m20"
+                    android:text="₹9900"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold"/>
+
+
+                <ProgressBar
+                    android:id="@+id/progress_bar4"
+                    android:layout_below="@+id/price_9900"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="@dimen/m190"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="@dimen/m10"
+                    android:layout_marginEnd="@dimen/m8"
+                    android:max="100"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/transportation_bar" />
+
+                <com.payment.view.BoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18%"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/progress_bar4"
+                    android:layout_marginTop="@dimen/m25"
+                    />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/shopping_5"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/m10"
+                android:layout_below="@+id/shopping_4"
+                android:layout_height="wrap_content">
+
+                <com.payment.view.BoldTextView
+                    android:id="@+id/others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/others"
+                    android:textSize="@dimen/text_16"/>
+
+                <ImageView
+                    android:id="@+id/ellipse5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ellipse"
+                    android:layout_toRightOf="@+id/others"
+                    android:layout_marginTop="@dimen/m10"
+                    android:layout_marginStart="@dimen/m10"
+                    />
+
+                <com.payment.view.BoldTextView
+                    android:id="@+id/price_1650"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ellipse5"
+                    android:layout_marginStart="@dimen/m20"
+                    android:text="₹1650"
+                    android:textSize="@dimen/text_16"
+                    android:textStyle="bold"/>
+
+
+                <ProgressBar
+                    android:id="@+id/progress_bar5"
+                    android:layout_below="@+id/price_1650"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="@dimen/m40"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="@dimen/m10"
+                    android:layout_marginEnd="@dimen/m8"
+                    android:max="100"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/others_bar" />
+
+                <com.payment.view.BoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3%"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@+id/progress_bar5"
+                    android:layout_marginTop="@dimen/m25"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

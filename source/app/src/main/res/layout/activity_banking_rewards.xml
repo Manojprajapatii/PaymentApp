@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_gradient"
+    android:layout_height="match_parent"
+    tools:context=".activity.BankingRewards">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+
+
+        <RelativeLayout
+        android:id="@+id/desing_card1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-50dp"
+        android:layout_marginTop="40dp"
+        android:rotation="10">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="315dp"
+            android:layout_height="193dp"
+            app:cardBackgroundColor="#90FFFFFF"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            app:cardCornerRadius="@dimen/m30"
+            app:cardElevation="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <TextView
+                    android:id="@+id/card_num1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/m28"
+                    android:layout_marginTop="@dimen/m20"
+                    android:text="2 2 1 3     4 5 6 3     6 7 8 9     6 4 5 7"
+                    android:textColor="@color/gray"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/wifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_num1"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/m40"
+                    android:layout_marginEnd="@dimen/m50"
+                    android:src="@drawable/wifi"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/mastercard_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/m30"
+                    android:layout_marginBottom="@dimen/m20"
+                    android:src="@drawable/mastercard_logo"
+                    app:tint="@color/gray" />
+
+                <ImageView
+                    android:id="@+id/chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/wifi"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/m30"
+                    android:layout_marginEnd="@dimen/m50"
+                    android:src="@drawable/chip" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/desing_card2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-50dp"
+        android:layout_below="@+id/desing_card1"
+        android:rotation="-10">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="315dp"
+            android:layout_height="193dp"
+            app:cardBackgroundColor="#59FFFB00"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            app:cardCornerRadius="@dimen/m30"
+            app:cardElevation="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <TextView
+                    android:id="@+id/card_num2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/m30"
+                    android:layout_marginTop="@dimen/m30"
+                    android:text="3 5 4 1     1 8 8 6     6 5 4 7     4 5 4 7"
+                    android:textColor="@color/gray"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/wifi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_num2"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/m20"
+                    android:layout_marginEnd="@dimen/m50"
+                    android:src="@drawable/wifi"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/visa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/m20"
+                    android:layout_marginBottom="@dimen/m20"
+                    android:rotation="15"
+                    android:src="@drawable/visa" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/wifi2"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/m20"
+                    android:layout_marginEnd="@dimen/m55"
+                    android:src="@drawable/second_chip"
+
+                    />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/desing_card3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-140dp"
+        android:layout_below="@+id/desing_card2"
+        android:rotation="-40">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
+            android:layout_width="315dp"
+            android:layout_height="193dp"
+            app:cardBackgroundColor="#59EC0000"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            app:cardCornerRadius="@dimen/m30"
+            app:cardElevation="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <TextView
+                    android:id="@+id/card_num3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/m50"
+                    android:layout_marginTop="@dimen/m30"
+                    android:text="6 7 8 8     2 5 9 2     0 0 1 9     5 5 4 7"
+                    android:textColor="@color/gray"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:id="@+id/visa2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/m20"
+                    android:layout_marginBottom="@dimen/m20"
+                    android:rotation="15"
+                    android:src="@drawable/visa" />
+
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/exclude"
+        android:layout_marginTop="557dp"
+        android:layout_marginStart="@dimen/m22"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/exclude2"
+        android:layout_marginTop="570dp"
+        android:layout_marginStart="@dimen/m35"
+        />
+
+
+    <com.payment.view.BoldTextView
+        android:id="@+id/rewards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rewards"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/m24"
+        android:layout_below="@+id/star"
+        android:layout_marginStart="@dimen/m22"
+        android:layout_marginTop="@dimen/m15"
+        />
+
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/m20"
+            android:backgroundTint="@color/white"
+            android:layout_below="@+id/rewards"
+            android:text="@string/btn"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="100dp" />
+
+
+    </RelativeLayout>
+</ScrollView>
